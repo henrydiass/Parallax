@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+
+body {
+    height: 100vh;
+    perspective: 1800px;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.cards {
+    display: inline-block;
+    min-width: 590px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px 20px 
+    #0000002b;
+    padding: 30px 35px;
+    perspective: 1800px;
+    text-align: left;
+    transform-origin: 50% 50%;
+    font-family: "Open Sans", sans;
+    transform-style: preserve-3d;
+    transform: rotateX(11deg) rotateY(16.5deg);
+}
+
+
+h1 {
+    color: #3e3e42;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    transform: translateZ(35px);
+}
+
+h3 {
+    color: #eb285d;
+    font-size: 16px;
+    margin-bottom: 6px;
+    transform: translateZ(25px);
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px -5px 
+    #00000099;
+    display: inline-block;
+    height: 250px;
+    overflow: hidden;
+    perspective: 1200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(35px);
+    transition: transform 200ms ease-out;
+    width: 175px;
+    text-align: center;
+}
+
+.card:not(:last-child) {
+    margin-right: 30px;
+}
+
+.img {
+    position: relative;
+    height: 100%;
+}
+
+.bg {
+    position: absolute;
+    inset: -50px;
+    transform-origin: 50% 50%;
+    transform: translateZ(-50px);
+    z-index: 0;
+}
+
+.one .img {
+    top: 14px;
+    right: -10px;
+    height: 110%;
+}
+
+.one .bg {
+    background: url("https://codetheworld.io/wp-content/uploads/2024/02/monobg.jpeg") center/cover
+    no-repeat;
+}
+
+.two .img{
+    top: 25px;
+}
+
+.two .bg{
+    background: url("https://codetheworld.io/wp-content/uploads/2024/02/spiritedbg.jpeg") center/
+    cover no-repeat;
+}
+
+.three .img {
+    top: 5px;
+    left: -4px;
+    height: 110%;
+}
+
+.three .bg {
+    background: url("https://codetheworld.io/wp-content/uploads/2024/02/howlbg.jpeg") center/cover no-repeat;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    background: linear-gradient(to bottom, 
+    #00000000 0%, #0000008c 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 10px;
+    margin-bottom: 3px;
+}
+
+
