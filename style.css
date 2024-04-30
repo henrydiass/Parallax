@@ -3,9 +3,7 @@
 body {
     height: 100vh;
     perspective: 1800px;
-    display: flex;
-    justify-content: center;
-    margin: 2rem;
+    touch-action: none;
 }
 
 .cards {

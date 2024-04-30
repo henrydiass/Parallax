@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const calcValue = (a, b) => {
         return (a /b * RANGE - RANGE / 2).toFixed(1);
     }
-  
+
     document.addEventListener(
-        'mousemove',
+        'pointermove',
         (event) => {
             const yValue = calcValue(event.y,window.innerHeight)
             const xValue = calcValue(event.x,window.innerWidth)
@@ -28,5 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             )
         }
     )
+
+   
   });
   
